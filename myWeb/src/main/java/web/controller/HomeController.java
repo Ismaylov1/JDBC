@@ -12,60 +12,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/users")
 public class HomeController {
-//    @Autowired
-//    private UserService userService;
-//
-//
-//
-//    @GetMapping
-//    public String listUsers(Model mod) {
-//        mod.addAttribute("users", userService.listUsers());
-//
-//        return "users";
-//    }
-//
-//    @GetMapping("/add")
-//    public String getUserForm() {
-//        return "userAdd";
-//    }
 
-    //    @PostMapping("/add")
-//    public String addUsers(@ModelAttribute("user") User user) {
-//        if (user.getId() == 0) {
-//            this.userService.add(user);
-//        } else {
-//            this.userService.updateUsers(user);
-//        }
-//        return "redirect:/users";
-//    }
-//@PostMapping("/add")
-//public String addUser(@ModelAttribute("addUser") User user) {
-//    userService.add(user);
-//    return "redirect:/users";
-//}
-//    @GetMapping("/remove/{id}")
-//    public String removeUser(@PathVariable("id") long id) {
-//        this.userService.remove(id);
-//        return "redirect:/users";
-//    }
-//    @PostMapping("/edit/{id}")
-//    public String updateUser(@ModelAttribute("editUser") User user) {
-//        userService.updateUser(user);
-//        return "redirect:/users";
-//    }
-//    @PostMapping("edit/{id}")
-//    public String editUser(@PathVariable("id") long id, Model model) {
-//        model.addAttribute("editUser", this.userService.getUserById(id));
-////        model.addAttribute("listUsers", this.userService.listUsers());
-//
-//        return "editUsers";
-//    }
-//
-////    @RequestMapping("userdata/{id}")
-////    public String userData(@PathVariable("id") long id, Model model) {
-////        model.addAttribute("user", this.userService.getUserById(id));
-////        return "userdata";
-////    }
     @Autowired
     private UserService userService;
 

@@ -34,7 +34,7 @@ public class UserServiceImp implements UserService {
     @Override
     @Transactional
     public void removeUser(long id) {
-        this.userDao.remove(id);
+        this.userDao.remove(getUserById(id));
     }
 
     @Override
